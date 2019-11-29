@@ -11,9 +11,10 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+Route::get('/', "PaginasController@inicio");
 
 Route::get('/cualquiera', function() {
     return "pagina cualquiera";
