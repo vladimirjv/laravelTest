@@ -45,7 +45,7 @@ class DemoController extends Controller
      */
     public function show($id)
     {
-        return "estas en la pagina de inicio " . $id;
+        //
     }
 
     /**
