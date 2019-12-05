@@ -20,11 +20,14 @@ Route::get('/cualquiera', function() {
     return "pagina cualquiera";
 });
 
-Route::get('/posts/{id}', function ($id) {
-    return "Aqui está el post n° " . $id;
-});
-Route::get('/posts/{id}/{nombre}', function ($id,$nombre) {
-    return "Aqui está el post n° " . $id;
-})->where('nombre','[a-zA-Z]+');
+// Route::get('/posts/{id}', function ($id) {
+//     return "Aqui está el post n° " . $id;
+// });
+// Route::get('/posts/{id}/{nombre}', function ($id,$nombre) {
+//     return "Aqui está el post n° " . $id;
+// })->where('nombre','[a-zA-Z]+');
+Route::resource('posts', 'PostsController');
 
-Route::get('/inicio', 'DemoController@inicio');
+Route::get('/inicio', 'DemoController@index');
+
+Route::get('/inicio/{id}', 'DemoController@show');
