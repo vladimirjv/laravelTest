@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class DemoController extends Controller
+class PostsController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -13,7 +13,7 @@ class DemoController extends Controller
      */
     public function index()
     {
-        return "Estás en la página de inicio demo";
+        //
     }
 
     /**
@@ -45,7 +45,7 @@ class DemoController extends Controller
      */
     public function show($id)
     {
-        return "estas en la pagina de inicio " . $id;
+        //
     }
 
     /**
