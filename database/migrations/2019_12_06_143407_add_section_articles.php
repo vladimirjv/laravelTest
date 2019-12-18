@@ -27,7 +27,7 @@ class AddSectionArticles extends Migration
     public function down()
     {
         Schema::table('articles', function (Blueprint $table) {
-            //$table->dropColumn('Section')
+            $table->dropColumn('Section');
         });
     }
 }
